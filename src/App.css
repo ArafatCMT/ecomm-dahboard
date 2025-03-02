@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+.navLinks a{
+  padding-left: 30px;
+  text-decoration: none;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
