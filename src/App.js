@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <h1>E-comm Project</h1>
         <Routes>
           <Route path='/addProduct' element={<AddProduct />}></Route>
           <Route path='/updateProduct' element={<UpdateProduct />}></Route>
