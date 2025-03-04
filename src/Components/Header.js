@@ -1,4 +1,4 @@
-import {Navbar, Nav, Container} from "react-bootstrap"
+import { Navbar, Nav, Container } from "react-bootstrap"
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -8,10 +8,19 @@ function Header() {
                 <Container>
                     <Navbar.Brand to="/">Navbar</Navbar.Brand>
                     <Nav className="me-auto navLinks">
-                        <Link to="/addProduct">Add Product</Link>
-                        <Link to="/updateProduct">Update Product</Link>
-                        <Link to="/login">Login</Link>
-                        <Link to="/register">Register</Link>
+                        {
+                            localStorage.getItem("user-info") ?
+                                <>
+                                    <Link to="/addProduct">Add Product</Link>
+                                    <Link to="/updateProduct">Update Product</Link>
+                                </>
+                                :
+                                <>
+                                    <Link to="/login">Login</Link>
+                                    <Link to="/register">Register</Link>
+                                </>
+                        }
+
                     </Nav>
                 </Container>
             </Navbar>
