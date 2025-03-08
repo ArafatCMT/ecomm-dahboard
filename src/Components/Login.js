@@ -31,7 +31,7 @@ function Login(){
         result = await result.json()
         console.log(result)
         localStorage.setItem("user-info", JSON.stringify(result))
-        navigate("/addProduct")
+        navigate("/")
     }
     return(
         <div>
