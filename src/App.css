@@ -10,6 +10,31 @@
   padding-left: 30px;
   text-decoration: none;
 }
+.input-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon i {
+  margin-right: 8px; 
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-left: 2.5rem;  
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -12,7 +12,7 @@ function ProductList() {
     // console.log(data)
     const GetData = async () => {
         try {
-            let response = await fetch("http://127.0.0.1:8000/api/product/list/");
+            let response = await fetch("http://127.0.0.1:8000/api/products/");
 
             // Response empty kina check koro
             if (!response.ok) {
